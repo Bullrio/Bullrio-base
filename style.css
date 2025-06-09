@@ -1,0 +1,33 @@
+
+body {
+  font-family: monospace;
+  background: #0e0e0e;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background: #1a1a1a;
+  padding: 4em 2em;
+}
+
+.buy-btn {
+  background: #2e8bff;
+  color: #fff;
+  padding: 1em 2em;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+section {
+  padding: 2em;
+  border-bottom: 1px solid #333;
+}
+
+footer {
+  padding: 1em;
+  background: #111;
+}
