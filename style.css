@@ -1,8 +1,8 @@
-/* ✅ Background gambar full layar */
+/* 🎯 Full background image */
 .background {
   background-image: url('bg-bullrio.jpeg');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: fixed;
@@ -11,46 +11,63 @@
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  opacity: 0.2;
+  opacity: 1;
 }
 
-/* ✅ Styling utama */
+/* ✨ Responsive override for mobile */
+@media screen and (max-width: 768px) {
+  .background {
+    background-size: contain;
+    background-position: top;
+    background-attachment: scroll;
+  }
+}
+
+/* 🌐 Base style */
 body {
   font-family: monospace;
-  background: none;
-  color: #fff;
+  background: transparent;
+  color: #ffffff;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-.hero {
-  background: none;
-  padding: 4em 2em;
+/* 📌 Section style */
+section {
+  padding: 2.5em 1.5em;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* 🦾 Hero section */
+.hero {
+  background: rgba(0, 0, 50, 0.6);
+}
+
+/* ✅ Headings */
+h1, h2 {
+  color: #42aaff;
+  margin-bottom: 0.5em;
+}
+
+/* 💡 Button */
 .buy-btn {
-  background: #2e8bff;
+  background: #42aaff;
   color: #fff;
   padding: 1em 2em;
-  border-radius: 5px;
+  border-radius: 8px;
   text-decoration: none;
   font-size: 1.2em;
-  display: inline-block;
-  margin-top: 1em;
+  transition: background 0.3s ease;
 }
 
-section {
-  padding: 2em;
-  border-bottom: 1px solid #333;
-  background: none;
+.buy-btn:hover {
+  background: #1a73e8;
 }
 
-footer {
-  padding: 1em;
-  background: none;
-}
-
+/* 🖼️ Image responsive */
 img {
   max-width: 100%;
   height: auto;
@@ -58,6 +75,7 @@ img {
   margin: 0 auto;
 }
 
+/* 📱 Responsive tweaks */
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 1.8em;
@@ -77,6 +95,22 @@ img {
   }
 
   section {
-    padding: 1.5em 1em;
+    padding: 2em 1em;
   }
+}
+
+/* 🧩 Footer */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1em;
+  font-size: 0.9em;
+}
+
+a {
+  color: #42aaff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
